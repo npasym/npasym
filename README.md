@@ -9,11 +9,11 @@ The plugin is written in Scala and packaged in a single .jar file containing the
 
 Availability
 
-As a .jar file, the plugin can be downloaded from: https://github.com/abb997/nPAsym/tree/master/bld . 
+As a .jar file, the plugin can be downloaded from: https://github.com/npasym/nPAsym/tree/master/bld . 
 After download it has to be placed in the Plugins subfolder (./plugins – in Linux) 
 within the ImageJ application folder. Please, be sure that the name of a .jar file contains an underscore sign. 
 If not, change its name to, e.g., nPAsym_.jar. Next time ImageJ starts, nPAsym will be available in the Plugins menu. 
-Demo images can be downloaded from: https://github.com/abb997/nPAsym/tree/master/img .
+Demo images can be downloaded from: https://github.com/npasym/nPAsym/tree/master/img .
 
 Building an executable JAR file
 
