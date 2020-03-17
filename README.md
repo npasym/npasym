@@ -10,7 +10,7 @@ As a .jar file, the plugin can be downloaded from: https://github.com/npasym/npa
 
 Building an executable JAR file
 
-To compile nPAsym plugin one needs to install and configure sbt (an open-source build tool) (https://www.scala-sbt.org/release/docs/Setup.html), sbt assembly plugin (https://github/sbt/sbt-assembly), and copy ./jars/ij.jar from ImageJ installation directory to the ./lib directory of the project. Then, from the command line, a user has to run sbt assembly in the top directory of the project. During first compilation sbt installs Scala of a required version with all dependencies, then compiles the code and assembles it into a single .jar file. After that, one should copy target/scala-2.12/nPAsym-assembly-0.1.jar to the Plugins directory of the ImageJ installation. Don’t forget to change the name of a .jar file as indicated above.
+To compile nPAsym plugin one needs to install and configure sbt (an open-source build tool) (https://www.scala-sbt.org/release/docs/Setup.html), sbt assembly plugin (https://github.com/sbt/sbt-assembly), and copy ./jars/ij.jar from ImageJ installation directory to the ./lib directory of the project. Then, from the command line, a user has to run sbt assembly in the top directory of the project. During first compilation sbt installs Scala of a required version with all dependencies, then compiles the code and assembles it into a single .jar file. After that, one should copy target/scala-2.12/nPAsym-assembly-0.1.jar to the Plugins directory of the ImageJ installation. Don’t forget to change the name of a .jar file as indicated above.
 
 Short user guidelines
 
