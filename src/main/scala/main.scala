@@ -122,7 +122,7 @@ class Img(val imgPlus: ImagePlus, val AA: Area, val bkgch: ImgCellT, noiseSize: 
         AA.dat.zipWithIndex.foreach(x => AA.dat(x._2) = Lbl.bkg)
         objs1.par.foreach(x => {
           x.pixels.foreach(AA.dat(_) = Lbl.mark)
-          x.border.foreach(AA.dat(_) = Lbl.obj)
+          //x.border.foreach(AA.dat(_) = Lbl.obj) // drawing border if necessary
           AA.dat(Svc.l2xy_1(x.center, AA.Xsz)) = Lbl.obj
         })
 
