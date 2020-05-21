@@ -58,7 +58,8 @@ class Area(val Xsz: Int, val dat: Array[Ut.ImgCellT], val imgProc: ImageProcesso
     val pa = Svc.PA(obj,Xsz,Lbl.obj,dat)*100.0
     //val r = obj.min
     val (x,y) = (obj.center.x.toInt,obj.center.y.toInt)
-    val str = f"${N}; (${x},${y}); PA=${pa}%.2f;"
+    val str = f"${N}; (${x},${y}); PA=${pa}%.2f; pixels=${obj.pixels.size}; " +
+              f"border=${obj.border.size}; asym=${(pa*obj.pixels.size/100.0).toInt}; "
     IJ.log(str)
     rt.incrementCounter()
     rt.addValue("#",N); rt.addValue("X",x); rt.addValue("Y",y)
