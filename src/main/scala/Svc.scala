@@ -303,7 +303,6 @@ class area2sets(A: Array[Ut.ImgCellT], Xsz: Int) {
     }
     else {
       //map everything except object to bkg
-      IJ.log(s"objGet(); removing all;")
       for (i <- 0 until A.size) A(i) = if (ll.mark == A(i)) ll.obj else ll.bkg
       CellBorderXY(XY(-1.0, -1.0), -1.0, -1.0, A.zipWithIndex.filter(_._1 == ll.bkg).map(_._2).toSet, Set[Int](),Xsz)
     }
